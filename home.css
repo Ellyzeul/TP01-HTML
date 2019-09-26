@@ -1,13 +1,55 @@
+.container{
+    display: grid;
+    grid-template-columns: 250px auto 350px;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+    "esquerda topo direita"
+    "esquerda feed direita" 
+}
+.aba_esquerda{
+    grid-area: esquerda;
+    background: lightblue;
+    border-radius: 30px;
+}
+.aba_direita{
+    grid-area: direita;
+    background: lightblue;
+    border-radius: 30px;
+}
+.topo{
+    grid-area: topo;
+    background: rgb(98, 141, 155);
+    border-radius: 30px;
+}
+.feed{
+    grid-area: feed;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
 #logo{
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 95px;
     padding-top: 50px;
     padding-left: 40px;
 }
 
-#lista_opcoes{
+.lista_opcoes{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 50px;
+    list-style-type: none;
+}
+
+#tweetButton{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
 }
