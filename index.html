@@ -4,6 +4,7 @@
         <title>Twitter</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="stylesheet" type="text/css" href="ParteDireita.css">
         <link rel="shortcut icon" href="img/logo.png">
     </head>
     <body class="container">
@@ -21,10 +22,55 @@
             </ul>
             <a href="index.html"><button class="tweetButton">Tweetar</button></a>
         </nav>
-        <div class="aba_direita">
-
-        </div>
-        <div class="center">
+        <nav class="aba_direita">
+                <div class="input">
+                    <form class="formPesquisar">
+                        <div class="pesquisa">
+                            <img id="iconeLupa" src="img/lupa2.png">
+                            <input type="text" name="pesquisa" id="campoPesquisa">
+                        </div>
+                    </form>
+                </div>
+            <div class="Assuntos">
+                <h2>Assuntos para você</h2>
+                <a href="index.html"><button id="iconeSettings"><img src="img/settings.png"></button></a>
+            </div>
+            <div class="item">
+                <img class="imagensRight" src="img/paisagem.jpg">
+                <div class="texto2"><p><strong>#PAISAGEM</strong></p></div>
+                <h4>Amazônia e sua fauna e flora sensacionais!</h4>
+            </div>
+            <p>17,6 mil Tweets</p>
+            <div class="item">
+                <p>Assunto no momento em Brasil</p>
+                <h4>Joaquin Phoenix, o novo Coringa</h4>
+            </div>
+            <p>75,2 mil Tweets</p>  
+            <div class="item">
+                <p>Assunto no momento em Brasil</p>
+                <h4>PrudenteM1LGR4U</h4>
+                <p>Calor em proporções extremas!</p>
+            </div>
+            <p>200 mil Tweets</p>
+            <a href="index.html"><button id="mostrarMais"><p1><strong>Mostrar mais</strong></p1></button></a>
+            <h2>Sugestões para seguir</h2>
+            <div class="item">
+                <img class="perfilDireita" src="img/Bilador.jpg">
+                <div class="nomePerfilDireita">
+                    <strong>@BRKSEDU</strong>  2M seguidores
+                </div>
+                <a href="index.html"><button id="botaoSeguir"><strong>Seguir</strong></button></a>
+            </div>
+            <div class="item">
+                <img class="perfilDireita" src="img/Viniccius13.png">
+                <div class="nomePerfilDireita">
+                    <strong>@Viniccius13</strong>  13K seguidores
+                </div>
+                <a href="index.html"><button id="botaoSeguir"><strong>Seguir</strong></button></a>
+            </div>
+            <a href="index.html"><button id="mostrarMais"><p1><strong>Mostrar mais</strong></p1></button></a>
+        </nav>
+        <nav class="center">
             <a href="index.html"><header class="topo">
                 <div id="pagina_inicial"><h1>Página inicial</h1></div>
                 <div><img src="img/starButton.png"></div>
@@ -188,6 +234,6 @@
                 </nav>
             </section>
             <div id="whiteSpace"><!-- Espaço em branco --></div>
-        </div>
+        </nav>
     </body>
 </html>
