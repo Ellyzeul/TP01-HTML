@@ -4,9 +4,10 @@
         <title>Twitter</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="shortcut icon" href="img/logo.png">
     </head>
     <body class="container">
-        <div class="aba_esquerda">
+        <nav class="aba_esquerda">
             <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo do site"></a>
             <ul class="lista_opcoes">
                 <li><button class="ButtonList"><a href="index.html"> <img src="img/homeButton.png"> Página inicial</a></button></li>
@@ -18,65 +19,175 @@
                 <li><button class="ButtonList"><a href="index.html"> <img src="img/profileButton.png"> Perfil</a></button></li>
                 <li><button class="ButtonList"><a href="index.html"> <img src="img/moreButton.png"> Mais</a></button></li>
             </ul>
-            <a href="index.html"><button id="tweetButton">Tweetar</button></a>
-        </div>
+            <a href="index.html"><button class="tweetButton">Tweetar</button></a>
+        </nav>
         <div class="aba_direita">
 
         </div>
-        <div class="feed">
-            <a href="index.html"><div class="topo">
+        <div class="center">
+            <a href="index.html"><header class="topo">
                 <div id="pagina_inicial"><h1>Página inicial</h1></div>
                 <div><img src="img/starButton.png"></div>
-            </div></a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
+            </header></a>
+            <div class="postage">
+                <div class="photoAndPost">
+                    <img class="profileImage" src="img/profileButton.png">    
+                    <form><input id="publicar" type="text" name="publish" placeholder="O que está acontecendo?"></form>
+                </div>
+                <div class="postButtons">
+                    <nav class="navAttach">
+                        <a href="index.html"><button class="attachButton"><img src="img/imageButton.png"></button></a>
+                        <a href="index.html"><button class="attachButton"><img src="img/gifButton.png"></button></a>
+                        <a href="index.html"><button class="attachButton"><img src="img/pollButton.png"></button></a>
+                        <a href="index.html"><button class="attachButton"><img src="img/smileButton.png"></button></a>
+                    </nav>
+                    <a id="TweetButtonOnPostage"href="index.html"><button class="tweetButton">Tweetar</button></a>
+                </div>
+            </div>
+            <div id="greySpace"><!-- Espaço em cinza --></div>
+            <section class="post">
+                <div class="retweet">
+                    <img src="img/retweetButton.png">
+                    <p>Gabriel Augusto</p>
+                    <p>retweetou</p>
+                </div>
+                <div class="Tweet">
+                    <img class="profileImage" src="img/fernandoProfilePicture.png">
+                    <div class="tweetContent">
+                        <span class="name">
+                            <h4> Fernando Salesi </h4>
+                            <p> @ferna º</p>
+                            <p>1 min</p>
+                        </span>
+                        <article>
+                            <p>Pra quem não tem nada metade é o dobro.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <section class="post">
+                <div class="Tweet">
+                    <img class="profileImage" src="img/piteriProfilePicture.png">
+                    <div class="tweetContent">
+                        <span class="name">
+                            <h4> Marco Piteri </h4>
+                            <p> @Piteri_C º</p>
+                            <p>2 min</p>
+                        </span>
+                        <article>
+                            <p>Olá pessoal,<br><br>
+                                Como sei que todos já estão adiantando o segundo trabalho<br>
+                                já estou começando a enunciar o quinto para que vocês<br>
+                                possam aproveitar
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <section class="post">
+                <div class="Tweet">
+                    <img class="profileImage" src="img/gabrielProfilePicture.png">
+                    <div class="tweetContent">
+                        <span class="name">
+                            <h4> Gabriel Augusto </h4>
+                            <p> @Ellyzeul º</p>
+                            <p>10 min</p>
+                        </span>
+                        <article>
+                            <p>O gás de casa acabou, mas como eu moro em Prudente não<br> 
+                            tem problema, peguei um ovo e fritei no asfalto
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <section class="post">
+                <div class="Tweet">
+                    <img class="profileImage" src="img/gabrielProfilePicture.png">
+                    <div class="tweetContent">
+                        <span class="name">
+                            <h4> Gabriel Augusto </h4>
+                            <p> @Ellyzeul º</p>
+                            <p>10 min</p>
+                        </span>
+                        <article>
+                            <p>Depois de apanhar e apanhar acho que aprendi a usar o flexbox
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <section class="post">
+                <div class="Tweet">
+                    <img class="profileImage" src="img/cacicProfilePicture.png">
+                    <div class="tweetContent">                            <span class="name">
+                            <h4> CACIC </h4>
+                            <p> @CACIC º</p>
+                            <p>09 de Nov</p>
+                        </span>
+                        <article>
+                            <p>Ó o café com internet, bora bora!!!
+                            </p>
+                            <img class="postImage" src="img/coffeInternet.jpeg">
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <section class="post">
+                <div class="Tweet">
+                    <img class="profileImage" src="img/cacicProfilePicture.png">
+                    <div class="tweetContent">
+                        <span class="name">
+                            <h4> CACIC </h4>
+                            <p> @CACIC º</p>
+                            <p>08 de Set</p>
+                        </span>
+                        <article>
+                            <p>Ó a SECOMPP chegando, bora bora!!!
+                            </p>
+                            <img class="postImage" src="img/Secompp.jpg">
+                        </article>
+                    </div>
+                </div>
+                <nav class="avaliationNav">
+                    <a href="index.html"><button class="avaliationButton"><img src="img/commentButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/retweetButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/likeButton.png"></button></a>
+                    <a href="index.html"><button class="avaliationButton"><img src="img/shareButton.png"></button></a>
+                </nav>
+            </section>
+            <div id="whiteSpace"><!-- Espaço em branco --></div>
         </div>
     </body>
 </html>

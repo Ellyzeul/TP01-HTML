@@ -7,9 +7,9 @@ body{
     grid-template-columns: 23% 45% 32%;
     grid-template-rows: 200px 450px auto;
     grid-template-areas:
-    "esquerda feed direita"
-    "esquerda feed direita"
-    ". feed direita"
+    "esquerda center direita"
+    "esquerda center direita"
+    ". center direita"
 }
 .topo{
     width: 45%;
@@ -31,11 +31,19 @@ body{
 .aba_direita{
     grid-area: direita;
     background: lightblue;
-    border-color: black;
 }
-.feed{
-    grid-area: feed;
+.center{
+    grid-area: center;
     background: white;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.postage{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid lightgray;
 }
 
@@ -57,7 +65,7 @@ body{
     margin-top: 5%;
 }
 
-#tweetButton{
+.tweetButton{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100%;
     margin-left: 20%;
@@ -103,4 +111,104 @@ body{
 }
 #pagina_inicial{
     width: 90%;
+}
+
+.profileImage{
+    margin: 1% 0% 0% 2%;
+    height: 60px;
+    width: 60px;
+}
+
+#publicar{
+    display: inline-block;
+    margin-left: 4%;
+    border: 0 solid white;
+}
+.photoAndPost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.postButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.navAttach{
+    width: 50%;
+}
+.attachButton{
+    margin: 0 1% 0 1%;
+    border: none;
+    padding-top: 5px;
+    border-radius: 100%;
+    background-color: white;
+}
+.attachButton:hover{
+    background-color: lightskyblue;
+}
+#TweetButtonOnPostage{
+    width: 200px;
+}
+#greySpace{
+    height: 5px;
+    background-color: lightgrey;
+}
+#whiteSpace{
+    height: 100px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+}
+.Tweet{
+    display: flex;
+    flex-direction: row;
+}
+.tweetContent{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.name h4{
+    margin-left: 3px;
+}
+.name p{
+    margin-left: 2px;
+    color: grey;
+}
+.avaliationButton{
+    margin: 0 9% 0 9%;
+    border: none;
+    background-color: white;
+    padding-top: 2px;
+    border-radius: 100px;
+}
+.avaliationButton:hover{
+    background-color: lightskyblue;
+}
+
+.postImage{
+    width: 85%;
+    height: 85%;
+}
+
+.retweet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.retweet img{
+    margin-left: 10%;
+}
+.retweet p{
+    margin-left: 2%;
+    color: gray;
 }
